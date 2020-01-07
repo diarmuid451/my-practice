@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>What Can JavaScript Do?</h2>
+
+<p id="demo" style="font-size: 20px; color: blueviolet;">Click the button to change the layout of this paragraph<sup>TM</sup>
+  
+</p>
+<p id="demo1">JavaScript can change HTML content.</p>
+
+<button onclick="myFunction()">Change Color!</button>
+
+<button type="button" onclick='document.getElementById("demo1").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+
+
+<button type="button"
+onclick="document.getElementById('demo2').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+
+<p id="demo2"></p>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("demo");
+  x.style.fontSize = "25px"; 
+  x.style.color = "red"; 
+}
+</script>
+
+
+<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+
+</body>
+</html>
